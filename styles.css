@@ -46,15 +46,29 @@ body {
 }
 
 main {
-  padding: 40px;
+  padding: 40px 0;
+}
+
+/* Two-column card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
 }
 
 .card {
   border: 1px solid #000;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
   position: relative;
+  overflow: hidden;
+}
+
+.card-image,
+.card-content {
+  flex: 1;
 }
 
 .card-image img {
@@ -67,6 +81,9 @@ main {
   background-color: #000;
   color: white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-content h2 {
@@ -74,18 +91,18 @@ main {
 }
 
 .card-content a {
-  color: #00aced; /* Optional: make in-text links stand out */
+  color: #00aced;
   text-decoration: underline;
 }
 
 .read-more {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
   font-size: 14px;
   color: black;
+  background-color: white;
   font-weight: bold;
   text-decoration: none;
+  padding-top: 10px;
+  display: inline-block;
 }
 
 .read-more:hover {
