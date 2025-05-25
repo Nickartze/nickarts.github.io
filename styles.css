@@ -52,7 +52,7 @@ body {
   font-size: 18px;
 }
 
-/* Grid */
+/* Grid Layout */
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -92,23 +92,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
+/* Title */
 .card-content h2 {
   margin: 0;
   font-size: 20px;
+  flex-shrink: 0;
 }
 
+/* Description */
 .card-content p {
-  flex: 1;
   margin: 10px 0;
+  line-height: 1.4;
+  overflow-y: auto;
+  flex-grow: 1;
 }
 
-.card-content a.read-more {
+/* Read more */
+.card-content .read-more {
   color: #00bfff;
   font-weight: bold;
   text-decoration: none;
-  margin-top: auto;
+  margin-top: 10px;
+  flex-shrink: 0;
+  align-self: flex-start;
 }
 
 /* Responsive */
