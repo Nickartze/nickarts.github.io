@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #fff;
   color: #000;
 }
@@ -8,11 +12,12 @@ body {
 /* Header */
 .top-header {
   background-color: #000;
-  color: white;
+  color: #fff;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-section h1 {
@@ -32,43 +37,43 @@ body {
   font-size: 14px;
 }
 
-/* Navigation */
+/* Nav */
 .main-nav {
   background-color: #111;
   display: flex;
   justify-content: center;
+  gap: 40px;
   padding: 10px 0;
 }
 
 .main-nav a {
   color: white;
-  margin: 0 40px;
   text-decoration: none;
   font-size: 18px;
 }
 
-/* Card Grid */
+/* Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
 }
 
-/* Card Layout */
+/* Card */
 .card {
   display: flex;
   height: 300px;
+  background-color: #fff;
   border: 1px solid black;
-  background-color: white;
   overflow: hidden;
 }
 
-/* Card Image */
+/* Image section */
 .card-image {
-  flex: 1;
+  width: 50%;
   height: 100%;
 }
 
@@ -78,11 +83,11 @@ body {
   object-fit: cover;
 }
 
-/* Card Content */
+/* Content section */
 .card-content {
-  flex: 1;
+  width: 50%;
   background-color: #000;
-  color: white;
+  color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -91,20 +96,19 @@ body {
 
 .card-content h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .card-content p {
-  flex-grow: 1;
-  margin: 15px 0;
-  font-size: 16px;
+  flex: 1;
+  margin: 10px 0;
 }
 
 .card-content a.read-more {
-  align-self: flex-start;
   color: #00bfff;
   font-weight: bold;
   text-decoration: none;
+  margin-top: auto;
 }
 
 /* Responsive */
@@ -118,11 +122,13 @@ body {
     height: auto;
   }
 
-  .card-image {
-    height: 200px;
+  .card-image,
+  .card-content {
+    width: 100%;
+    height: auto;
   }
 
-  .card-content {
-    height: auto;
+  .card-image {
+    height: 200px;
   }
 }
