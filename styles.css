@@ -54,7 +54,7 @@ body {
 
 /* a */
 a {
-  color: #00eaff;
+  color: rgb(255, 255, 112);
   text-decoration: none;
 }
 
@@ -124,13 +124,22 @@ a:focus {
 
 /* Keep this link at the bottom */
 .card-content .read-more {
-  color: #00eaff;
+  color: rgb(255, 255, 112);
   font-weight: bold;
   text-decoration: none;
   flex-shrink: 0;
   align-self: flex-start;
   margin-top: auto;
 }
+
+.card-content .read-more:hover,
+.card-content .read-more:focus {
+  color: #ff6600; /* hover color for Read more */
+  text-decoration: underline; /* optional effect */
+}
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
