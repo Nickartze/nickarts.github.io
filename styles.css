@@ -52,6 +52,18 @@ body {
   font-size: 18px;
 }
 
+/* a */
+a {
+  color: #00eaff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ff6600; /* new highlight color */
+}
+
+
 /* Grid */
 .card-grid {
   display: grid;
@@ -112,7 +124,7 @@ body {
 
 /* Keep this link at the bottom */
 .card-content .read-more {
-  color: #00bfff;
+  color: #00eaff;
   font-weight: bold;
   text-decoration: none;
   flex-shrink: 0;
