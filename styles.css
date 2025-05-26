@@ -54,7 +54,7 @@ body {
 
 /* a */
 a {
-  color: rgb(109, 255, 255));
+  color: lightcoral;
   text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ a:focus {
 
 /* Keep this link at the bottom */
 .card-content .read-more {
-  color: rgb(109, 255, 255);
+  color: lightcoral;
   font-weight: bold;
   text-decoration: none;
   flex-shrink: 0;
