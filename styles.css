@@ -153,3 +153,27 @@ footer h3 {
     gap: 24px;                /* slightly tighter spacing on small screens */
   }
 }
+
+/* ─── MOBILE HEADER STACK ─────────────────────────────────────────────── */
+/*  Break the header into two rows on any screen  ≤ 768 px                */
+@media (max-width: 768px) {
+  /* 1️⃣  Let brand + nav wrap to a new line */
+  header {
+    flex-wrap: wrap;        /* allow items to move to next row            */
+    row-gap: 8px;           /* vertical spacing between the rows          */
+  }
+
+  /* 2️⃣  Force the brand to occupy a full row */
+  .brand {
+    flex: 0 0 100%;         /* full-width block                           */
+  }
+
+  /* 3️⃣  Make the nav row full-width & center (or left-align if preferred) */
+  header > nav {
+    flex: 0 0 100%;         /* full-width 2nd row                         */
+  }
+  nav ul {
+    justify-content: center;/* swap to flex-start if you want left-align  */
+    gap: 24px;              /* slightly tighter spacing on small screens  */
+  }
+}
