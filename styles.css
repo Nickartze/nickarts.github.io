@@ -24,7 +24,7 @@ a {
   text-decoration: none;
   transition: color .2s ease;
 }
-a:hover { color: var(--accent); }
+a:hover { color: blue }
 
 /* ─── HEADER ─────────────────────────────────────────────────────────── */
 header {
